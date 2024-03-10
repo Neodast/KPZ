@@ -1,0 +1,1 @@
+```typescript const a: string = 'efefef';  ```
