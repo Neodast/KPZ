@@ -27,7 +27,7 @@ class ZOO {
   addFood(food: IFood) {
     this.food.push(food);
   }
-
+  
   removeAviary(aviary: IAviary<IAnimal>) {
     this.aviaries = this.aviaries.filter((elem) => elem !== aviary);
   }

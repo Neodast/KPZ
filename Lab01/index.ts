@@ -42,8 +42,14 @@ randomZoo.addFood(new Meat(MeatType.Beef, MeatQuality.Medium, 2, 15));
 randomZoo.addFood(new Meat(MeatType.Fish, MeatQuality.Hight, 10, 4));
 randomZoo.addFood(new OrganicFeed(23, FeedType.Fruits, 1));
 // Inventory methods
-console.log(Inventory.getAnimals(lionAviary));
-console.log(Inventory.getAnimals(cobraAviary));
-console.log(Inventory.getAviaries(randomZoo));
-console.log(Inventory.getWorkers(randomZoo));
-console.log(Inventory.getFood(randomZoo));
+try {
+  console.log(Inventory.getAnimals(lionAviary));
+  console.log(Inventory.getAnimals(cobraAviary));
+  console.log(Inventory.getAviaries(randomZoo));
+  console.log(Inventory.getWorkers(randomZoo));
+  console.log(Inventory.getFood(randomZoo));
+  console.log(Inventory.getAnimalsCount(lionAviary));
+  console.log(Inventory.getWorkersCount(randomZoo));
+} catch (e) {
+  console.log(e);
+}

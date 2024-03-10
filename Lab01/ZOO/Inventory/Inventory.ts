@@ -11,7 +11,7 @@ class Inventory {
     return zoo.workers.length;
   }
 
-  public static getAnimalsCount(aviary: IAviary<IAnimal>) {
+  public static getAnimalsCount<IAnimal>(aviary: IAviary<IAnimal>) {
     return aviary.animals.length;
   }
 
